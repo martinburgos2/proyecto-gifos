@@ -1,0 +1,124 @@
+@font-face{
+  font-family: Montserrat-Bold;
+  src: url(../font/Montserrat-Bold.ttf);
+}
+
+@font-face{
+  font-family: Montserrat-Medium;
+  src: url(../font/Montserrat-Medium.ttf);
+}
+
+@font-face{
+  font-family: Montserrat-Regular;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+
+@font-face{
+  font-family: Roboto-Bold;
+  src: url(../font/Roboto-Bold.ttf);
+}
+
+@font-face{
+  font-family: Roboto-Regular;
+  src: url(../font/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .clear {
+    float: none;
+    clear: both;
+  }
+
+  .primerContainer, .segundoContainer h3, .tercerContainer h3, ul li a{
+    font-family: Montserrat-Bold;
+    color: #572EE5;
+  }
+
+.segundoContainer p{
+  font-family: Montserrat-Medium;
+  color: #572EE5;
+}
+
+.tercerContainer p, .footer{
+  font-family: Roboto-Regular;
+}
+  
+  body {
+    min-width: 375px;
+  }
+  
+  header {
+    width: 100%;
+    height: 95px;
+    border-top: 5px solid #572EE5;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .menu ul{
+    display: none;
+  }
+
+  .close{
+    display: none;
+  }
+
+  .logo{
+    margin: 29px 0 0 22px ;
+  }
+
+  .responsive{
+    margin: 47px 26px 0 0;
+  }
+
+  .primerContainer {
+    height: 317px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: chartreuse;
+  }
+
+  .primerContainer h1{
+    width: 286px;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    margin: 0.6% 11.7% 0 12%;
+  }
+
+  #cambio-color{
+    color: #50E3C2;
+  }
+
+  .ilustra img{
+    width: 273px;
+    height: 130px;
+    margin: 31px 51px 0 51px;
+  }
+
+  .segundoContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .segundoContainer h3{
+    margin-top: 31px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .segundoContainer p{
+    width: 60%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0.2% 20% 0 20%;
+  }
+

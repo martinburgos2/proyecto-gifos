@@ -11,53 +11,67 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
+    <!--INICIO DE ENCABEZADO-->
+    <header class="header">
 
-            <nav>
-                <ul>
-                    <li>Modo Nocturno</li>
-                    <li>Favoritos</li>
-                    <li>Mis GIFOS</li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-mobile.svg" alt="logo"></a>
         </div>
+
+        <!--INICIO DE MENU-->
+        <nav class="menu">
+            <div class="responsive">
+                <a href="#menu" class="open">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#" class="close">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#episodios">Modo Nocturno</a></li>
+                <li><a href="#segundo-titulo">Favoritos</a></li>
+                <li><a href="#invitados">Mis GIFOS</a></li>
+            </ul>
+        </nav>
+        <!--FIN DE MENU-->
+
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class="primerContainer">
+            
                 <h1>Inspírate, busca, guarda, y crea los mejores <span id="cambio-color">GIFOS</span></h1>
-            </div>
-            <div>
-                <img src="" alt="">
+            
+            <div class="ilustra">
+                <img src="img/ilustra_header.svg" alt="">
             </div>
             <div>
                 search
             </div>
 
         </section>
-        <section>
+        <section class="segundoContainer">
             <div>
-                <p>Trending:</p>
+                <h3 >Trending:</h3>
                 <p>Reactions, Entertainment, Sports, Stickers, Artists</p>
             </div>
-            <div>
-                slider de gif
-            </div>
+            
         </section>
-        <section>
+        <section class="tercerContainer">
             <div>
                 <h3>
                     Trending GIFOS
                 </h3>
                 <p>Mira los ultimos GIFOS de nuestra comunidad.</p>
+
+                <div>
+                    slider de gif
+                </div>
             </div>
         </section>
 
-        <footer>
+        <footer class="footer">
             <p>Compartir en:</p>
             <div id="redes">
                 <i class="fab fa-facebook-f"></i>
