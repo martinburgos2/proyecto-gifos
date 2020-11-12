@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--
      <link rel="stylesheet" type="text/css" href="css/modo-night.css">
@@ -24,25 +23,29 @@
         </div>
 
         <!--INICIO DE MENU-->
-        <nav class="menu">
+        
             <div class="responsive">
-                <a href="#menu" class="open">
+                <a class="open">
                     <i class="fas fa-bars"></i>
                 </a>
-                <a href="#" class="close">
+                <a class="close">
                     <i class="fas fa-times"></i>
                 </a>
             </div>
-            <ul>
-                <li><a href="#episodios">Modo Nocturno</a></li>
-                <li><a href="#segundo-titulo">Favoritos</a></li>
-                <li><a href="#invitados">Mis GIFOS</a></li>
+            <nav class="menu">
                 
-            </ul>
-
-            
-        </nav>
-        <button><img src="img/button-crear-gifo.svg"></button>
+                <ul class="hamburguesa">
+                    <li><a href="#episodios">Modo Nocturno</a></li>
+                    <li><a href="#segundo-titulo">Favoritos</a></li>
+                    <li><a href="#invitados">Mis GIFOS</a></li>    
+                </ul>           
+            </nav>
+        <div class="boton">
+            <button>
+            <img src="img/button-crear-gifo.svg" alt="boton de añadir gif">
+            </button>
+        </div>
+        
         <!--FIN DE MENU-->
 
     </header>
@@ -50,14 +53,15 @@
     <main>
         <section class="primerContainer">
             
-                <h1>Inspírate, busca, guarda, y crea los mejores <span id="cambio-color">GIFOS</span></h1>
+            <h1>Inspírate, busca, guarda, y crea los mejores <span id="cambio-color">GIFOS</span></h1>
             
             <div class="ilustra">
                 <img src="img/ilustra_header.svg" alt="">
             </div>
-            <div>
-                search
-            </div>
+            <form id="buscador">
+                <input id="search" type="search" autocomplete="on" placeholder="Busca GIFOS y más">
+                <input type="button" value="L" class="icon"/>
+            </form>
 
         </section>
         <section class="segundoContainer">
@@ -81,7 +85,7 @@
         </section>
 
         <footer class="footer">
-            
+        
             <h3>Compartir en:</h3>
 
             <div id="redes">
@@ -94,6 +98,8 @@
 
         </footer>
     </main>
+
+    <script type="text/javascript" src="js/menu.js"></script> 
 </body>
 
 </html>

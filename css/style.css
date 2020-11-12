@@ -23,6 +23,11 @@
   src: url(../font/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: WebSymbolsRegular;
+  src: url(../font/websymbols-regular-webfont.ttf);
+  src: url(../font/websymbols-regular-webfont.woff);
+}
 /**********ESTILOS GENERALES**********/
 
 * {
@@ -48,6 +53,10 @@
 .tercerContainer p, .footer{
   font-family: Roboto-Regular;
 }
+
+.icon {
+  font-family: WebSymbolsRegular;
+}
   
   body {
     min-width: 375px;
@@ -64,21 +73,9 @@
     justify-content: space-between;
   }
 
-  .menu ul{
-    display: none;
-  }
-
-  .close{
-    display: none;
-  }
-
   .logo{
 
     margin: 29px 0 0 22px ;
-  }
-
-  .nigth{
-    display: none;
   }
 
   .logo img{
@@ -87,16 +84,82 @@
   }
 
   .responsive{
-    margin: 47px 26px 0 0;
+    margin: 47px 26px 0 70.2%;
   }
 
-  .header button{
+  .hamburguesa{
+    width: 100%;
+    height: 484px;
+    background: rgba(87,46,229,0.90);
+    position: absolute;
+    top: 95px;
+    left: 0;
+  }
+
+  .hamburguesa ul li{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+  }
+
+  .hamburguesa li a{
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .open{
+    display: none;
+  }
+
+  .actionClose{
+    display: none;
+  }
+
+  .actionOpen{
+    display: block;
+  }
+
+  .actionOpen2{
+    display: none;
+  }
+
+  .actionClose2{
+    display: block;
+  }
+
+  .nigth{
+    display: none;
+  }
+
+  .boton{
+    display: none;
+  }
+
+  .menu-out{
+    display: none;
+  }
+
+  .logo img{
+    width: 48.8px;
+    height: 48.8px;
+  }
+/********************************************************/
+  ul{
     display:none;
   }
-
+/***************************************************/
   @media (min-width: 500px){
     .header{
       width: 100%;
+      height: 95px;
+      margin: 0;
     }
 
     .responsive{
@@ -104,25 +167,43 @@
     }
 
     .logo{
-      margin-top: 23px;
+      margin-top: 18px;
     }
 
     .menu{
+      margin: 0;
+      padding: 0;
       width: 70%;
-      padding-top: 36px;
+      height: 90px;
     }
     .menu ul{
+      height: 95px;
+      position: initial;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      background-color: white;
     }
 
     .menu ul li{
       text-decoration: none;
-      list-style: none;
+      list-style: none;      
+      padding-top: 16px;
+      
     }
 
     .menu ul li a{
       text-decoration: none;
+      color: #572EE5;
+    
+    }
+
+    .menu ul li a:hover{
+      border-bottom: 2px solid #5ED7C6;
+    }
+
+    .menu ul li a:active{
+      color: #9CAFC3;
+      border-bottom: none;
     }
 
     .header button{
@@ -133,16 +214,107 @@
       border: none;
     }
 
-    button{
+    .boton{
+      display: block;
       margin-top: 23px;
-      margin-right: 5.8%;
+      margin-right: 4.8%;
     }
 
-    button img{
+    .boton img{
       width: 40px;
       height: 40px;
     }
 
+  }
+
+  @media (min-width: 1024px){
+    .logo{    
+      margin-left: 10.8%;
+    }
+
+    .day img{
+      width: 51.1px;
+      height: 51.1px;
+    }
+
+    .menu{
+      width: 50%;
+      margin-left: 30.4%;
+      margin-right: 10.8%;
+    }
+
+
+    .menu ul{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu ul li{
+      padding-right: 2%;
+    }
+
+    button{
+      margin-top: 5px;
+      margin-right: 10.8%;
+      margin-left: 8.1%;
+    }
+    
+  }
+
+  @media(min-width: 1440px){
+    .header{
+      width: 100%;
+    }
+
+    .day img{
+      width: 59.1px;
+      height: 59.1px;
+    }
+
+
+    button{
+      margin-right: 156px;
+      padding-right: 26px;
+    }
+
+    .menu{
+      width: 100%;
+      margin-left: 4.1%;
+    }
+
+    .menu ul{
+      width: 395px;
+      padding: 0;
+      height: 95px;
+      margin-left: 63.3%;
+      margin-right: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu ul li{
+      padding-right: 0;
+    }
+
+    .boton{
+      width: 54px;
+      height: 54px;
+      margin-right: 10.8%;
+    }
+
+    .boton button{
+      margin: 0;
+      padding: 0;
+      width: 54px;
+      height: 54px;
+    }
+
+    .boton img{
+      margin: 0;
+      padding: 0;
+      width: 54px;
+      height: 54px;
+    }
   }
 
   /**********PRIMER CONTAINER*************/
@@ -160,7 +332,7 @@
     font-size: 25px;
     line-height: 33px;
     text-align: center;
-    margin: 0.6% 11.7% 0 12%;
+    margin: 7px 11.7% 0 12%;
   }
 
   #cambio-color{
@@ -171,6 +343,84 @@
     width: 72.8%;
     height: 130px;
     margin: 31px 13.6% 0 13.6%;
+  }
+
+  #buscador{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  #search{
+    width: 334px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #572EE5;
+    border-radius: 27px;
+    border-radius: 27px;
+    margin: -4px auto 31px auto;
+  }
+
+  #search::placeholder{
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #9CAFC3;
+    text-align: left;
+    padding: 1.2% 17.1% 1.1% 14.7%;
+  }
+
+  .icon{
+    background: transparent;
+    border: none;
+    color: #572EE5;
+    font-size: 20px;
+    position: relative;
+    right: 10.5%;
+    top: 1%;
+  }
+
+  @media (min-width: 500px){
+
+    .primerContainer{
+      margin-top: 76px;
+      height: auto;
+
+    }
+   
+    .primerContainer h1{  
+      width: 414px;
+      margin-left: auto;
+      margin-right: auto ;
+      margin-top: 0;
+    }
+
+    .ilustra{      
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ilustra img{
+      margin: 0;
+      width: 399px;
+      height: 190px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 24px;
+    }
+
+    #buscador{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #search{
+      width: 451px;
+      height: 50px;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top: -4px;
+      margin-bottom: 31px;
+    }
   }
 
   /**********SEGUNDO CONTAINER*************/
@@ -193,6 +443,22 @@
     text-align: center;
     line-height: 25px;
     margin: 0.2% 20% 45px 20%;
+  }
+
+  @media (min-width: 500px){
+    .segundoContainer h3{
+      margin-top: 73px;
+      font-size: 18px;  
+      line-height: 25px;
+    }
+
+    .segundoContainer p{
+      margin: 0;
+      margin-top: 7px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+    }
   }
 
   /**********TERCER CONTAINER*************/
@@ -224,6 +490,26 @@
     height: 187px;
     margin-top: 2.7%;
     padding-bottom: 6.8%;
+  }
+
+  @media (min-width: 500px){
+    .tercerContainer h3{
+      font-size: 25px;
+      padding: 0;
+      margin-top: 162px;
+      margin-bottom: 12px;
+    }
+
+    .tercerContainer p{
+      font-size: 18px;
+      color: #000000;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .tercerContainer p br{
+      display: none;
+    }
   }
 
   /***************** FOOTER  ********************/
@@ -261,4 +547,93 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  @media (min-width: 700px){
+    .footer{
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .footer h3{  
+      width: 180px;    
+      margin: 0;
+      padding: 0;
+      margin-left: 10%;
+      font-size: 13px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    #redes{
+      width: 155px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 17px;
+    }
+
+    #redes a{
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer p{
+      width: 450px;
+      margin-left: 30%;
+      margin-right: 7%;
+      font-size: 13px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+  }
+
+  @media (min-width: 1000px){
+
+    .footer h3{  
+      width: 100px;  
+      margin-left: 10.8%;
+    }
+
+    #redes{
+      width: 90px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 17px;
+    }
+
+    .footer p{
+      width: 250px;
+      margin-left: 45%;
+      margin-right: 7%;
+      font-size: 13px;
+    }
+  }
+
+  @media (min-width: 1440px){
+    .footer{
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .footer h3{  
+      width: 79px;    
+      margin: 0;
+      padding: 0;
+      margin-left: 10.8%;
+    }
+
+    #redes{
+      width: 95px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 17px;
+    }
+
+    .footer p{
+      width: 200px;
+      margin-left: 51%;
+      margin-right: 11%;
+  }
+
+  }
+
 
