@@ -1,0 +1,13 @@
+section{
+    width: 1200px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+}
+
